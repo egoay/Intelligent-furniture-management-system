@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c4a0ad1-355b-4307-8447-5a0c34b14f21" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Maven" />
+        <option name="userSettingsFile" value="D:\Maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2XIobMJxaGJfyFMpV6hNEVxDPKG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Desktop/Ting&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;SQL Dialects&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/templates/home.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="login.js" working-dir="$PROJECT_DIR$/src/main/resources/static/scripts">
+      <method v="2" />
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.home.html" />
+        <item itemvalue="Node.js.login.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c4a0ad1-355b-4307-8447-5a0c34b14f21" name="Changes" comment="" />
+      <created>1698326025935</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698326025935</updated>
+      <workItem from="1698326026870" duration="1591000" />
+      <workItem from="1698371498289" duration="3080000" />
+      <workItem from="1698374665681" duration="30000" />
+      <workItem from="1698374705014" duration="12000" />
+      <workItem from="1698376390525" duration="1845000" />
+      <workItem from="1698378263926" duration="1980000" />
+      <workItem from="1698382200418" duration="12000" />
+      <workItem from="1698382230721" duration="11000" />
+      <workItem from="1698406772117" duration="3502000" />
+      <workItem from="1698410612804" duration="1075000" />
+      <workItem from="1698411699166" duration="5828000" />
+      <workItem from="1698672373959" duration="3000" />
+      <workItem from="1698733636208" duration="3000" />
+      <workItem from="1700055401596" duration="101000" />
+      <workItem from="1700210243054" duration="18000" />
+      <workItem from="1700210324630" duration="15000" />
+      <workItem from="1700210411308" duration="20000" />
+      <workItem from="1700550022764" duration="5000" />
+      <workItem from="1700791649116" duration="5184000" />
+      <workItem from="1701399166116" duration="2110000" />
+      <workItem from="1701515598710" duration="1620000" />
+      <workItem from="1701675536973" duration="5000" />
+      <workItem from="1701682584520" duration="64000" />
+      <workItem from="1701682801041" duration="257000" />
+      <workItem from="1701699320729" duration="135000" />
+      <workItem from="1701742955739" duration="7000" />
+      <workItem from="1701744525422" duration="2528000" />
+      <workItem from="1701766510831" duration="3472000" />
+      <workItem from="1701778870058" duration="5353000" />
+      <workItem from="1701849950949" duration="6043000" />
+      <workItem from="1701916047692" duration="2000" />
+      <workItem from="1701920601663" duration="6542000" />
+      <workItem from="1702000374195" duration="7733000" />
+      <workItem from="1702204205935" duration="6204000" />
+      <workItem from="1702211617670" duration="22000" />
+      <workItem from="1702275677426" duration="4854000" />
+      <workItem from="1702290079460" duration="1193000" />
+      <workItem from="1702295873878" duration="382000" />
+      <workItem from="1702301736804" duration="1040000" />
+      <workItem from="1702303297787" duration="2000" />
+      <workItem from="1702303323772" duration="1000" />
+      <workItem from="1702366015249" duration="2057000" />
+      <workItem from="1702451894991" duration="2379000" />
+      <workItem from="1702464181409" duration="6000" />
+      <workItem from="1702518970323" duration="5650000" />
+      <workItem from="1702604845275" duration="6991000" />
+      <workItem from="1702612028427" duration="28000" />
+      <workItem from="1702612206307" duration="1116000" />
+      <workItem from="1702617220756" duration="1298000" />
+      <workItem from="1702624098142" duration="2024000" />
+      <workItem from="1702734397013" duration="5663000" />
+      <workItem from="1702783450077" duration="12905000" />
+      <workItem from="1702821434651" duration="1036000" />
+      <workItem from="1702877706594" duration="5671000" />
+      <workItem from="1702895417578" duration="7124000" />
+      <workItem from="1702906395373" duration="1611000" />
+      <workItem from="1702909018443" duration="129000" />
+      <workItem from="1702910436178" duration="2573000" />
+      <workItem from="1702964835299" duration="29949000" />
+      <workItem from="1703036857420" duration="4400000" />
+      <workItem from="1703068246398" duration="8111000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.data.mapping.PropertyReferenceException" package="org.springframework.data.mapping" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
