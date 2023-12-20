@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFUMAS</title>
+  <link rel="icon" type="images/png" href="images/R-C.png">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/setsensemode.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="sidebar">
+      <img src="images/R-C.png" alt="Logo">
+      <span>INFUMAS</span>
+      <a href="./index.html">首页</a>
+      <a href="./aboutus.html">关于我们</a>
+      <a href="#" data-action="add-device">添加设备</a>
+      <a href="#" data-action="device-management">设备管理</a>
+      <a href="#" data-action="scene-mode">场景模式</a>
+      <a href="#" data-action="time-settings">时间设置</a>
+      <a href="./count.html">账户</a>
+    </div>
+    <div class="home-content">
+      <div class="content-wrapper">
+        <h1>欢迎来到 INFUMAS</h1>
+        <p>
+          我们致力于提升家庭生活，为你带来更好的智能体验
+        </p>
+        <p>
+          My stand"Smart Experience" can not only manage smart devices, but also set scene modes and switching times,
+          which is the invincible stand "Smart Experience"'s Capability
+        </p>
+        <button>了解更多</button>
+      </div>
+    </div>
+    <div id="add-device-form">
+      <div class="content-wrapper2">
+        <h2>添加设备</h2>
+        <label for="room-select">选择房间</label>
+        <select id="room-select">
+          <option value="living-room">客厅</option>
+          <option value="guestroom">客房</option>
+          <option value="study-room">书房</option>
+          <option value="balcony">阳台</option>
+          <option value="bedroom">卧室</option>
+          <option value="kitchen">厨房</option>
+        </select>
+        <label for="device-type-select">选择设备类型</label>
+        <select id="device-type-select">
+          <option value="light">灯光</option>
+          <option value="curtain">窗帘</option>
+          <option value="thermostat">温控器</option>
+          <option value="humidifier">湿度器</option>
+          <option value="security-camera">安防摄像头</option>
+          <option value="else">其他</option>
+        </select>
+        <label for="device-name-input">设备名称：</label>
+        <input type="text" id="device-name-input">
+        <button id="add-device-button">确定</button>
+      </div>
+    </div>
+    <div id="manage-device">
+      <div class="content-wrapper2">
+        <h2>设备管理</h2>
+        <label for="device-select-type">类型查询<label>
+            <select id="device-select-type">
+              <option value="all-types">所有类型</option>
+              <option value="light">灯光</option>
+              <option value="curtain">窗帘</option>
+              <option value="thermostat">温控器</option>
+              <option value="humidifier">湿度器</option>
+              <option value="security-camera">安防摄像头</option>
+              <option value="else">其他</option>
+            </select>
+            <label for="device-select-room">房间查询</label>
+            <select id="device-select-room">
+              <option value="all-rooms">所有房间</option>
+              <option value="living-room">客厅</option>
+              <option value="guestroom">客房</option>
+              <option value="study-room">书房</option>
+              <option value="balcony">阳台</option>
+              <option value="bedroom">卧室</option>
+              <option value="kitchen">厨房</option>
+            </select>
+            <label for="device-table">查询表</label>
+            <table id="managepagetable">
+              <tr>
+                <th>房间</th>
+                <th>类型</th>
+                <th>名称</th>
+                <th>状态</th>
+                <th>操作</th>
+              </tr>
+              <tr>
+                <td>room</td>
+                <td>type</td>
+                <td>name</td>
+                <td>status</td>
+                <td>
+                  <button class="modifyButton">修改房间</button>
+                  <button class="modifyButton">修改类型</button>
+                  <button class="modifyButton">修改名称</button>
+                  <button class="modifyButton">改变状态</button>
+                  <button class="modifyButton">删除设备</button>
+                <td>
+              </tr>
+            </table>
+            <button id="search-device-button">查询设备</button>
+            <script src="scripts/managedevice.js"></script>
+      </div>
+    </div>
+    <div id="set-sense-mode">
+      <div class="content-wrapper2">
+        <h2>场景模式</h2>
+        <label>应用场景模式</label>
+        <div id="set-sense-mode-container"></div>
+        <label>添加场景模式</label>
+        <button id="add-sense-mode-button">添加场景模式</button>
+        <script src="scripts/setsensemode.js"></script>
+      </div>
+    </div>
+    <div id="switching-time">
+      <h2>时间设置</h2>
+      <label>选择设备</label>
+      <label></label>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="show-message-modal">
+      <p></p>
+      <button>确定</button>
+      <script src="scripts/modal.js"></script>
+    </div>
+    <div class="change-mode-modal">
+      <table id="change-mode-table">
+        <tr>
+          <th>名称</th>
+          <th>房间</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>设备名</td>
+          <th>房间名</th>
+          <td>
+            <button>删除</button>
+          </td>
+        </tr>
+        <table>
+          <button id="add-device-to-mode-button">添加设备</button>
+          <button id="comfirm-edit-button">确定</button>
+    </div>
+    <div class="add-sense-modal">
+      <label class="room-select">请选择房间</label>
+      <select>
+        <option>所有房间</option>
+        <option>客厅</option>
+        <option>书房</option>
+        <option>阳台</option>
+        <option>卧室</option>
+        <option>厨房</option>
+      </select>
+      <label class="type-select">请选择设备类型</label>
+      <select>
+        <option>所有类型</option>
+        <option>灯光</option>
+        <option>窗帘</option>
+        <option>温度器</option>
+        <option>湿度器</option>
+        <option>安防摄像头</option>
+        <option>其他</option>
+      </select>
+      <table>
+        <tr>
+          <th>设备名称</th>
+          <th>
+          <th>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button>添加</button>
+          </td>
+        <tr>
+      </table>
+      <button>确定</button>
+      <script src="scripts/adddevice.js"></script>
+    </div>
+    <div class="add-sense-mode">
+      <lable>请输入模式名</lable>
+      <input class="add-mode-input"></input>
+    </div>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
