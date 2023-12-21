@@ -44,18 +44,21 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   //提示框的js
   function showMessage(message) {
-    // 创建一个提示框元素
-    const errorMessage = $('<div>').text(message);
-    errorMessage.addClass('error-message');
-
-    // 将提示框插入到页面中
-    secForm.append(errorMessage);
-    const delay = 2000;
-    // 2秒后，隐藏提示框并从DOM中移除
-    setTimeout(function () {
-      errorMessage.hide();
-      errorMessage.remove();
-    }, delay);
+    const modal = document.querySelector('.show-message-modal');
+    const overlay = document.querySelector('.overlay');
+    const pElement = document.querySelector('.show-message-modal p');
+    pElement.textContent = message;
+    overlay.style.display = 'block';
+    modal.style.display = 'block';
+    const hideModeButton = document.getElementById('showMessageModeConfirmButton');
+    hideModeButton.removeEventListener('click', hideMessage);
+    hideModeButton.addEventListener('click', hideMessage);
+  }
+  function hideMessage() {
+    const overlay = document.querySelector('.overlay');
+    const modal = document.querySelector('.show-message-modal');
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
   }
 
   addDeviceButton.addEventListener('click', function (event) {//添加设备的API
