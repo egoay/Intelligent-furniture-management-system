@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.Devicemapper">
+
+    <!-- 插入设备 -->
+    <insert id="insertDevice" parameterType="com.example.demo.entity.Device">
+        INSERT INTO device (deviceid, devicename, type, roomid, status)
+        VALUES (#{deviceid}, #{devicename}, #{type}, #{roomid}, #{status})
+    </insert>
+
+    <!-- 根据ID删除设备 -->
+    <delete id="deleteDeviceByName" parameterType="String">
+        DELETE FROM device WHERE devicename = #{deviceName}
+    </delete>
+
+    <!-- 更新设备 -->
+    <update id="updateDevice" parameterType="com.example.demo.entity.Device">
+        UPDATE device
+        SET devicename = #{devicename},
+            type = #{type},
+            roomid = #{roomid},
+            status = #{status}
+        WHERE deviceid = #{deviceid}
+    </update>
+
+    <!-- 查找设备 -->
+    <select id="findDevices" resultMap="deviceResultMap">
+        SELECT * FROM device WHERE roomname = #{roomname} AND type = #{type}
+    </select>
+
+    <!-- 结果映射 -->
+    <resultMap id="deviceResultMap" type="com.example.demo.entity.Device">
+        <id column="deviceid" property="deviceid"/>
+        <result column="devicename" property="devicename"/>
+        <result column="type" property="type"/>
+        <result column="roomid" property="roomid"/>
+        <result column="roomname" property="roomname"/>
+        <result column="status" property="status"/>
+    </resultMap>
+
+</mapper>

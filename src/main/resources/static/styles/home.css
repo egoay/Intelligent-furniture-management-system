@@ -1,0 +1,319 @@
+/*这是导航栏的样式表*/
+#sidebar {
+  width: 250px;
+  /* 设置导航栏的宽度 */
+  background-color: #2c2f3a;
+  /* 导航栏背景颜色 */
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0) 100%);
+  padding: 20px;
+  /* 设置导航栏内边距 */
+  box-sizing: border-box;
+  color: #fff;
+}
+
+#sidebar img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+#sidebar span {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: rgb(38, 2, 49);
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 20px;
+  color: #f3efef
+}
+
+#sidebar a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  transition: background-color 0.3;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+#sidebar a:hover {
+  color: #e8eff0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@font-face {
+  font-family: 'tangsong';
+  src: url('../tangxianbinsong.ttf');
+}
+
+/*这是导航栏的样式表*/
+/*这是首页的样式表*/
+.home-content {
+  display: block;
+  flex-grow: 1;
+  padding: 40px;
+  text-align: center;
+  background-color: #fef5e7;
+  background-image: url("../images/smarthome-colorful.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+  padding: 20px;
+  position: relative;
+  top: 25%;
+  left: 50%;
+  /* 与父元素左侧距离为50% */
+  transform: translateX(-50%);
+  background-color: #fef5e7;
+  max-width: 700px;
+  border-radius: 0.7rem;
+  opacity: 0.9;
+}
+
+.home-content h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #444;
+  align-items: center;
+}
+
+.home-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.home-content button {
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #f10b0b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*这是首页的样式表*/
+/*这是添加设备页面的样式表*/
+#add-device-form {
+  flex-grow: 1;
+  padding: 40px;
+  text-align: center;
+  background-color: #fef5e7;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-image: url("../images/smarthome-colorful.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.content-wrapper2 {
+  padding: 20px;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  /* 与父元素左侧距离为50% */
+  transform: translateX(-50%);
+  background-color: #fef5e7;
+  max-width: 1000px;
+  border-radius: 0.7rem;
+  opacity: 0.9;
+}
+
+#add-device-form h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+#add-device-form label {
+  display: block;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #666;
+}
+
+#add-device-form select,
+#add-device-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#add-device-form button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #f10b0b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#add-device-form button:hover {
+  background-color: #222;
+}
+
+/*这是添加设备页面的样式表*/
+/*这是设备管理页面的样式表*/
+#manage-device {
+  flex-grow: 1;
+  padding: 40px;
+  text-align: center;
+  background-color: #fef5e7;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-image: url("../images/smarthome-colorful.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+#manage-device h2 {
+  font-size: 40px;
+  margin: 20px;
+}
+
+#manage-device label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#manage-device select {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#manage-device select,
+#manage-device table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#manage-device table {
+  border-collapse: collapse;
+}
+
+#manage-device th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#manage-device th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#manage-device.modifyButton {
+  padding: 6px 10px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+#search-device-button {
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #15e364;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+#search-device-button:hover{
+  background-color: #05742f;
+}
+#manage-device button:focus {
+  outline: none;
+}
+
+#manage-device button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width:600px) {
+  #manage-device table button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/*这是设备管理页面的样式表*/
+/*这是场景模式页面的样式表*/
+#set-sense-mode {
+  flex-grow: 1;
+  padding: 40px;
+  text-align: center;
+  background-color: #fef5e7;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-image: url("../images/smarthome-colorful.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+/*这是场景模式页面的样式表*/
+/*这是时间设置页面的样式表*/
+#switching-time {
+  flex-grow: 1;
+  padding: 40px;
+  text-align: center;
+  background-color: #fef5e7;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-image: url("../images/smarthome-colorful.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+/*这是时间设置页面的样式表*/
+/*这是总容器的样式表*/
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.home-content button:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+/*这是总容器的样式表*/

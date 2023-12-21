@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.Usersmapper">
+
+    <!--注册用户-->
+    <insert id="addUser" parameterType="com.example.demo.entity.Users">
+        insert into users(username, password, email)
+            value (#{username}, #{password}, #{email})
+    </insert>
+
+    <!--查找用户名-->
+    <select id="findUserName" resultType="com.example.demo.entity.Users">
+        select *
+        from users
+        where username = #{username}
+    </select>
+
+    <!--查找账号密码-->
+    <select id="findPassword" resultType="String">
+        select password
+        from users
+        where username = #{username}
+    </select>
+</mapper>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- https://codepen.io/danielkvist/pen/LYNVyPL -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFUMAS</title>
+  <link rel="stylesheet" href="../static/styles/login.css">
+  <link rel="icon" type="images/png" href="../static/images/smarthome-logo.jpg">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+  <div class="container right-panel-active">
+    <!-- Sign Up -->
+    <div class="container__form container--signup">
+      <form class="form" id="form1" action="/smarthome/signup" method="post">
+        <h2 class="form__title">Sign Up</h2>
+        <input type="text" placeholder="User" class="input"  name="username" required maxlength="20"/>
+        <input type="email" placeholder="Email" class="input" name="email" pattern="[\w]+(\.[\w]+)*@[\w]+(\.[\w]+)+" required/>
+        <input type="password" placeholder="Password" class="input" name="password" required minlength="6" maxlength="20"/>
+        <button class="btn">Sign Up</button>
+      </form>
+    </div>
+
+    <!-- Sign In -->
+    <div class="container__form container--signin">
+      <form class="form" id="form2" action="/smarthome/login2" method="post">
+        <h2 class="form__title">Sign In</h2>
+        <input type="text" placeholder="User" class="input" name="username" required>
+        <input type="password" placeholder="Password" class="input" name="password" required/>
+        <a href="#" class="link">Forgot your password?</a>
+        <button class="btn">Sign In</button>
+      </form>
+    </div>
+    <!-- Overlay -->
+    <div class="container__overlay">
+      <div class="overlay">
+        <div class="overlay__panel overlay--left">
+          <button class="btn" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay__panel overlay--right">
+          <button class="btn" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="successMessage"></div>
+  <script src="../static/scripts/login.js"></script>
+</body>
+</html>
