@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     async function removeDevice(row, room, name) {                         //这是删除设备的API，如果有中间表，则把中间表涉及这个设备的元组也删除
         var Data = {
-            room: room,
-            name: name
+            roomname: room,
+            devicename: name
         };
         try {
             const response = await fetch('/api/removeDevice', {
@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }//
     async function cellChange(row, line, newName, room, name, type) {             //这是改变字段名的API
         var Data = {
-            room: room,
-            name: name,
+            roomname: room,
+            devicename: name,
             type:type,
-            newName:newName
+            newdevicename:newName
         };
         try {
             const response = await fetch('/api/cellChange', {
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var room = document.getElementById("device-select-room").value;
         var devicemessage = {
             type: type,
-            room: room
+            roomname: room
         };
         async function transport(Data) {//
             try {
