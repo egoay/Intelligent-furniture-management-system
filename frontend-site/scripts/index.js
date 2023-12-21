@@ -69,11 +69,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 示例：打印选择框和输入框的值
     var roomname = $('#roomname-select').val();
-    var devicetype = $('#type-select').val();
+    var type = $('#type-select').val();
     var devicename = $('#devicename-input').val();
     var devicemessage = {
-      room: room,
-      devicetype: devicetype,
+      roomname: room,
+      type: type,
       devicename: devicename
     }
     function transport(Data) {
