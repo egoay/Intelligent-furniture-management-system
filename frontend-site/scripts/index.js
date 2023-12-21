@@ -68,9 +68,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // 可以获取选择框和输入框的值，并进行相应的处理
 
     // 示例：打印选择框和输入框的值
-    var room = $('select[id=room-select].select').val();
-    var devicetype = $('select[id=device-type-select].select').val();
-    var devicename = $('input[id=device-name-input].input').val();
+    var roomname = $('#roomname-select').val();
+    var devicetype = $('#type-select').val();
+    var devicename = $('#devicename-input').val();
     var devicemessage = {
       room: room,
       devicetype: devicetype,
