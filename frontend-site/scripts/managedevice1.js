@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var row = event.target.parentNode.parentNode; // 获取按钮所在的行
                 var roomCell = row.cells[0];
                 var room = roomCell.textContent;
-                var nameCell = row.cell[1];
+                var nameCell = row.cells[1];
                 var name = nameCell.textContent;
                 switch (buttonType) {
                     case 'modifyRoomButton':
