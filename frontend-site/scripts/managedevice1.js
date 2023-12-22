@@ -1,38 +1,40 @@
 document.addEventListener('DOMContentLoaded', function () {
     const manageDeviceseachbutton = document.querySelector('#search-device-button')
-    var buttons = document.querySelectorAll('.modifyButton');
     const table = document.getElementById('managepagetable');
-    buttons.forEach(function (button) {
-        button.addEventListener('click', function (event) {
-            var buttonType = event.target.dataset.type;
-            var row = event.target.parentNode.parentNode; // 获取按钮所在的行
-            var roomCell = row.cells[0];
-            var room = roomCell.textContent;
-            var nameCell = row.cell[1];
-            var name = nameCell.textContent;
-            switch (buttonType) {
-                case 'modifyRoomButton':
-                    const newRoom = prompt("请输入新的房间信息", currentRoom);
-                    cellChange(row, 0, newRoom, room, name, "房间");
-                    break;
-                case 'modifyTypeButton':
-                    const newType = prompt("请输入新的类型名", currentType);
-                    cellChange(row, 1, newType, room, name, "类型");
-                    break;
-                case 'modifyNameButton':
-                    const newName = prompt("请输入新的设备名称", currentName);
-                    cellChange(row, 2, newName, roomname, "名称");
-                    break;
-                case 'modifyStatusButton':
-                    const newStatus = prompt("请输入新的设备状态", currentStatus);
-                    cellChange(row, 3, newStatus, room, name, "状态");
-                    break;
-                case 'removeDeviceButton':
-                    removeDevice(row, room, name);
-                    break;
-            }
+    function addEventListenerToButton(){
+        var buttons = document.querySelectorAll('.modifyButton');
+        buttons.forEach(function (button) {
+            button.addEventListener('click', function (event) {
+                var buttonType = event.target.dataset.type;
+                var row = event.target.parentNode.parentNode; // 获取按钮所在的行
+                var roomCell = row.cells[0];
+                var room = roomCell.textContent;
+                var nameCell = row.cell[1];
+                var name = nameCell.textContent;
+                switch (buttonType) {
+                    case 'modifyRoomButton':
+                        const newRoom = prompt("请输入新的房间信息", currentRoom);
+                        cellChange(row, 0, newRoom, room, name, "房间");
+                        break;
+                    case 'modifyTypeButton':
+                        const newType = prompt("请输入新的类型名", currentType);
+                        cellChange(row, 1, newType, room, name, "类型");
+                        break;
+                    case 'modifyNameButton':
+                        const newName = prompt("请输入新的设备名称", currentName);
+                        cellChange(row, 2, newName, roomname, "名称");
+                        break;
+                    case 'modifyStatusButton':
+                        const newStatus = prompt("请输入新的设备状态", currentStatus);
+                        cellChange(row, 3, newStatus, room, name, "状态");
+                        break;
+                    case 'removeDeviceButton':
+                        removeDevice(row, room, name);
+                        break;
+                }
+            })
         })
-    })
+    }
     async function removeDevice(row, room, name) {                         //这是删除设备的API，如果有中间表，则把中间表涉及这个设备的元组也删除
         var Data = {
             roomname: room,
@@ -140,6 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
             removeDeviceButton.setAttribute('data-type', 'removeDeviceButton')
             actionsCell.appendChild(removeDeviceButton);
         })
+        addEventListenerToButton();
     }
     manageDeviceseachbutton.addEventListener('click', function (event) {                              //这是查询的API
         event.preventDefault();
