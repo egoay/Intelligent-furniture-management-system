@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             button.addEventListener('click', function (event) {
                 var buttonType = event.target.dataset.type;
                 var row = event.target.parentNode.parentNode; // 获取按钮所在的行
+                var rowIndex = row.rowIndex;
                 var roomCell = row.cells[0];
                 var room = roomCell.textContent;
                 var nameCell = row.cells[1];
@@ -14,33 +15,34 @@ document.addEventListener('DOMContentLoaded', function () {
                 switch (buttonType) {
                     case 'modifyRoomButton':
                         const newRoom = prompt("请输入新的房间信息", currentRoom);
-                        cellChange(row, 0, newRoom, room, name, "房间");
+                        cellChange(rowIndex, 0, newRoom, room, name, "房间");
                         break;
                     case 'modifyTypeButton':
                         const newType = prompt("请输入新的类型名", currentType);
-                        cellChange(row, 1, newType, room, name, "类型");
+                        cellChange(rowIndex, 1, newType, room, name, "类型");
                         break;
                     case 'modifyNameButton':
                         const newName = prompt("请输入新的设备名称", currentName);
-                        cellChange(row, 2, newName, roomname, "名称");
+                        cellChange(rowIndex, 2, newName, roomname, "名称");
                         break;
                     case 'modifyStatusButton':
                         const newStatus = prompt("请输入新的设备状态", currentStatus);
-                        cellChange(row, 3, newStatus, room, name, "状态");
+                        cellChange(rowIndex, 3, newStatus, room, name, "状态");
                         break;
                     case 'removeDeviceButton':
-                        removeDevice(row, room, name);
+                        removeDevice(rowIndex, room, name);
                         break;
                 }
             })
         })
     }
-    async function removeDevice(row, roomname, devicename) {
+    async function removeDevice(rowIndex, roomname, devicename) {
+        const table = document.getElementById('managepagetable');
+        var row = table.rows[rowIndex];
         var Data = {
             roomname: roomname,
             devicename: devicename
         };
-
         try {
             const response = await fetch('device/removeDevice', {
                 method: 'POST',
