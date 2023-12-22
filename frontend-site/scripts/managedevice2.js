@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             const result = await response.json();
             if (result.status === 'success') {
-                if (row >= 0 && row < table.rows.length) {
-                    const rowToDelete = table.rows[row];
+                if (rowIndex >= 0 && rowIndex < table.rows.length) {
+                    const rowToDelete = row;
 
                     if (rowToDelete instanceof Node) {
                         table.removeChild(rowToDelete);
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         console.error('rowToDelete is not a valid Node:', rowToDelete);
                     }
                 } else {
-                    console.error('Invalid row index:', row);
+                    console.error('Invalid row index:', rowIndex);
                 }
             } else {
                 window.alert(result.error || '未知错误');  // 显示错误信息，如果有的话
