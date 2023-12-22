@@ -75,7 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
             throw new Error('请求处理失败');
         }
     }
-    async function cellChange(row, line, newName, room, name, type) {             //这是改变字段名的API
+    async function cellChange(rowIndex, line, newName, room, name, type) { 
+        const table = document.getElementById('managepagetable');
+        var row = table.rows[rowIndex];//这是改变字段名的API
         var Data = {
             roomname: room,
             devicename: name,
@@ -96,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             const result = await response.json();
-            if (result === 'success') {
+            if (result.status === "success") {
                 var cellToModify = row.cell[line];
                 cellToModify.innerHTML = newName;
             } else {
