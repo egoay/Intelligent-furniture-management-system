@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 throw new Error('请求出错');
             }
             const result = await response.json();
-            if (result === 'success') {
+            if (result.status === "success") {
                 const rowToDelete = table.rows[row];
                 table.removeChild(rowToDelete);
             } else {
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             const result = await response.json();
-            if (result === 'success') {
+            if (result.status === "success") {
                 var cellToModify = row.cell[line];
                 cellToModify.innerHTML = newName;
             } else {
