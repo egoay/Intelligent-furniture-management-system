@@ -1,0 +1,117 @@
+#set-sense-mode-container div {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+.add-sense-mode{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+#change-mode-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.add-sense-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.add-sense-modal label{
+    display:block;
+    margin-buttom:5px;
+}
+.add-sense-modal select, .add-sense-modal input{
+    width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.add-sense-modal table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .add-sense-modal th, .add-sense-modal td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .add-sense-modal th:nth-child(1) {
+    text-align: left;
+  }
+  
+  .add-sense-modal button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-sense-modal button:hover {
+    background-color: #45a049;
+  }
+/*这是弹窗遮蔽的样式表表*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+/*这是弹窗的样式表*/
+.show-message-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+/*修改弹窗的样式表*/
+.change-mode-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+/*修改弹窗的确定按钮的样式表*/
